@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Overleaf}
+\fancyhead[RE,LO]{Guides and tutorials}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Suyog}{Jadhav}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.28\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT (ISM), Dhanbad}
+\descript{BTech in Electronics and Communication}
+\location{May 2021 | Dhanbad (JH), India}
+\location{ Cum. GPA: 8.19 / 10.0
+% \\ Major GPA: -- / 10.0
+}
+\sectionsep
+
+\subsection{Modern College, Pune}
+\location{Grad. May 2017 |  Pune (MH), India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\href{mailto:suyog.jadhav1@gmail.com}{\bf Mail} \\
+\href{http://suyogjadhav.com}{\bf Website} \\
+\href{https://scholar.google.com/citations?user=8wS71BQAAAAJ&hl=en}{\bf Google Scholar Profile} \\
+\href{https://www.suyogjadhav.com/resume/}{\textbf{Complete Unabridged Resume}}
+
+\sectionsep
+Github:// \href{https://github.com/IAmSuyogJadhav}{\bf IAmSuyogJadhav} \\
+LinkedIn://  \href{https://www.linkedin.com/in/IAmSuyogJadhav}{\bf IAmSuyogJadhav} \\
+Twitter://  \href{https://twitter.com/IAmSuyogJadhav}{\bf IAmSuyogJadhav} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\section{Skills}
+\subsection{Programming}
+\location{Very Familiar:}
+Python \textbullet{} PyTorch \textbullet{} API and backend development (Flask) \textbullet{} Linux \textbullet{} Git \textbullet{} Google Cloud Platform
+
+\location{Over 1000 lines of code:}
+C \textbullet{} C++ \textbullet{}  Matlab \textbullet{} Regex \textbullet{} CSS \textbullet{} Keras \textbullet{} TensorFlow
+
+\location{Familiar:}
+Shell \textbullet{} Javascript \textbullet{} Batch
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+
+\descript{Gold Medal | Dec 2019}
+\location{Ashoka's Tech for Change Challenge at 6\textsuperscript{th} Inter-IIT Tech Meet}
+\sectionsep
+\descript{2\textsuperscript{nd}/150 teams | Sep 2019}
+\location{CDAC AI Hackathon 2019 sponsored by Nvidia}
+\sectionsep
+\descript{4\textsuperscript{th}/300 teams | Jan 2019}
+\location{PanIIT Mission AI: Solve for India Hackathon}
+\sectionsep
+\descript{Rank 6664\textsuperscript{th}/12M | May 2017}
+\location{All India Rank in JEE (Advanced) 2017}
+
+
+% \begin{tabular}{rll}
+% 2019	     & Gold Medal  & Ashoka's Tech for Change Challenge \\ & & at Inter-IIT Tech Meet 2019 \\
+% 2019         & 2\textsuperscript{nd}/150 teams & CDAC AI Hackathon 2019 sponsored by Nvidia \\
+% 2019         & 4\textsuperscript{th}/300 teams & PanIIT Mission AI: Solve for India Hackathon
+
+% \end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.7\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{UiT- The Arctic University of Norway}
+\descript{| Research Intern }
+\location{Apr 2020 - Aug 2020 | Tromsø, Norway}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\location{Worked on two different projects during the course of this internship.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Application of deep learning for illumination estimation in Fourier ptychography microscopy (FPM); manuscript submitted to the Optics Express journal.
+\item Artefact removal from MUSICAL nanoscopy images using deep learning; manuscript submitted to the Neural Networks journal.
+\end{tightemize}
+% Both the projects have been discussed in more detail under the \textit{Research} section. 
+\sectionsep
+
+\runsubsection{Cancer Moonshot Inc.}
+\descript{| Deep Learning R\&D Intern }
+\location{Jun 2019 – Jul 2019 | Bangalore (KA), India}
+\location{Worked on developing deep learning models for detection and segmentation of prostate cancer legions from the prostate MRI scans.}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Trained UNet model with some modifications to fit the extremely small ground truth labels. The dataset used was very small, I used data augmentation to increase the effective dataset size and improve the performance of the model. 
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{DataProrrisi Inc.}
+% \descript{| Software Engineering Intern }
+% \location{Dec 2018 – Jan 2019 | Remote}
+% \begin{tightemize}
+% \item Assisted in developing the backend for DataProrrisi, a startup focused on revolutionizing the loan acquisition process using machine learning, based in California.
+% \item I used Flask for implementing the necessary API calls needed by the backend.
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{Cyber Labs - IIT (ISM) Dhanbad} %- The Arctic University of Norway}
+\descript{| AI Team Leader}
+\location{Jul 2019 - Present | Dhanbad (JH), India}
+\begin{tightemize}
+\item My team works on various projects that utilise machine learning. We also conduct workshops, hold paper reading sessions and organize machine learning competitions in the college.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Past Research Projects}
+
+\runsubsection{Artefact Removal from Nanoscopy Images}
+% \descript{ }
+\descript{| Aug 2020}
+MUSICAL is a nanoscopy method that produces a high-res output from a temporal stack of fluorescence microscopy images. Due to the noise in the data, the produced MUSICAL image has background debris and reduced resolvability. I worked on simulating 3 different structures (actins, vesicles and mitochondria) and training autoencoder models for denoising the MUSICAL images. Various loss functions were explored and their performance was evaluated. Under the guidance of \href{https://sites.google.com/site/uthkrishth/krishnaagarwal}{\bf Dr. Krishna Agarwal} and \href{https://sites.google.com/site/dilipprasad/}{\bf Dr. Dilip K. Prasad}.
+\sectionsep
+
+\runsubsection{Deep Learning in Fourier Ptychography}
+% \descript{ }
+\descript{| Jun 2020}
+Fourier ptychography is a microscopy technique that uses low-resolution images taken from multiple illumination angles to generate a high-resolution image. I implemented the complete pipeline including the illumination angle estimation model, automatic calibration algorithm, and the final reconstruction algorithm adapted from Aidukas et. al. 2018. For illumination estimation, I trained an object detection model to locate the "pupil" in the Fourier spectra of the input images to estimate the illumination. Under the guidance of \href{https://sites.google.com/site/uthkrishth/krishnaagarwal}{\bf Dr. Krishna Agarwal} and \href{https://sites.google.com/site/dilipprasad/}{\bf Dr. Dilip K. Prasad}.
+\sectionsep
+
+% \runsubsection{Deep Learning in Fourier Ptychography}
+% \descript{ }
+\descript{$\mapsto$ Details about more projects can be found on  \href{https://github.com/IAmSuyogJadhav}{\bf my GitHub profile}}
+\sectionsep
+
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
