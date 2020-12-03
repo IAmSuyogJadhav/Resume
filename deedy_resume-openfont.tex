@@ -90,7 +90,7 @@
 \subsection{IIT (ISM), Dhanbad}
 \descript{BTech in Electronics and Communication}
 \location{May 2021 | Dhanbad (JH), India}
-\location{ Cum. GPA: 8.19 / 10.0
+\location{ Cum. GPA: 8.205 / 10.0
 % \\ Major GPA: -- / 10.0
 }
 \sectionsep
@@ -149,7 +149,7 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
+\section{Awards/Scores} 
 
 \descript{Gold Medal | Dec 2019}
 \location{Ashoka's Tech for Change Challenge at 6\textsuperscript{th} Inter-IIT Tech Meet}
@@ -157,11 +157,14 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 \descript{2\textsuperscript{nd}/150 teams | Sep 2019}
 \location{CDAC AI Hackathon 2019 sponsored by Nvidia}
 \sectionsep
+\descript{2\textsuperscript{nd} Rank | Apr 2020}
+\location{EndoCV Challenge (Single Frame Object Detection track), 17th IEEE ISBI (2020) [2]}
+\sectionsep
 \descript{4\textsuperscript{th}/300 teams | Jan 2019}
 \location{PanIIT Mission AI: Solve for India Hackathon}
 \sectionsep
-\descript{Rank 6664\textsuperscript{th}/12M | May 2017}
-\location{All India Rank in JEE (Advanced) 2017}
+\descript{IELTS Band 8/9 | Oct 2020}
+\location{CEFR Level: C1}
 
 
 % \begin{tabular}{rll}
@@ -194,8 +197,8 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 \location{Worked on two different projects during the course of this internship.}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Application of deep learning for illumination estimation in Fourier ptychography microscopy (FPM); manuscript submitted to the Optics Express journal.
-\item Artefact removal from MUSICAL nanoscopy images using deep learning; manuscript submitted to the Neural Networks journal.
+\item Application of deep learning for illumination estimation in Fourier ptychography microscopy (FPM);
+\item Artefact removal from MUSICAL nanoscopy images using deep learning.
 \end{tightemize}
 % Both the projects have been discussed in more detail under the \textit{Research} section. 
 \sectionsep
@@ -203,10 +206,10 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 \runsubsection{Cancer Moonshot Inc.}
 \descript{| Deep Learning R\&D Intern }
 \location{Jun 2019 – Jul 2019 | Bangalore (KA), India}
-\location{Worked on developing deep learning models for detection and segmentation of prostate cancer legions from the prostate MRI scans.}
+\location{Worked on developing a deep learning model for segmentation of cancer lesions from prostate MRI scans.}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Trained UNet model with some modifications to fit the extremely small ground truth labels. The dataset used was very small, I used data augmentation to increase the effective dataset size and improve the performance of the model. 
+\item Trained UNet model with custom modifications to fit the extremely small ground truth labels. Used data augmentation techniques to improve the performance of the model. 
 \end{tightemize}
 \sectionsep
 
@@ -219,13 +222,13 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 % \end{tightemize}
 % \sectionsep
 
-\runsubsection{Cyber Labs - IIT (ISM) Dhanbad} %- The Arctic University of Norway}
-\descript{| AI Team Leader}
-\location{Jul 2019 - Present | Dhanbad (JH), India}
-\begin{tightemize}
-\item My team works on various projects that utilise machine learning. We also conduct workshops, hold paper reading sessions and organize machine learning competitions in the college.
-\end{tightemize}
-\sectionsep
+% \runsubsection{Cyber Labs - IIT (ISM) Dhanbad} %- The Arctic University of Norway}
+% \descript{| AI Team Leader}
+% \location{Jul 2019 - Present | Dhanbad (JH), India}
+% \begin{tightemize}
+% \item My team works on various projects that utilise machine learning. We also conduct workshops, hold paper reading sessions and organize machine learning competitions in the college.
+% \end{tightemize}
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     RESEARCH
@@ -236,13 +239,19 @@ Shell \textbullet{} Javascript \textbullet{} Batch
 \runsubsection{Artefact Removal from Nanoscopy Images}
 % \descript{ }
 \descript{| Aug 2020}
-MUSICAL is a nanoscopy method that produces a high-res output from a temporal stack of fluorescence microscopy images. Due to the noise in the data, the produced MUSICAL image has background debris and reduced resolvability. I worked on simulating 3 different structures (actins, vesicles and mitochondria) and training autoencoder models for denoising the MUSICAL images. Various loss functions were explored and their performance was evaluated. Under the guidance of \href{https://sites.google.com/site/uthkrishth/krishnaagarwal}{\bf Dr. Krishna Agarwal} and \href{https://sites.google.com/site/dilipprasad/}{\bf Dr. Dilip K. Prasad}.
+MUSICAL is a nanoscopy method that produces a high-res output from a temporal stack of fluorescence microscopy images. The produced MUSICAL image has artefacts due to input noise. I worked on simulating 3 different subcellular structures and training autoencoder models for denoising the produced MUSICAL images. \emph{Accepted in Biomedical Optics Express (Dec. 2020)} [1].
 \sectionsep
 
 \runsubsection{Deep Learning in Fourier Ptychography}
 % \descript{ }
 \descript{| Jun 2020}
-Fourier ptychography is a microscopy technique that uses low-resolution images taken from multiple illumination angles to generate a high-resolution image. I implemented the complete pipeline including the illumination angle estimation model, automatic calibration algorithm, and the final reconstruction algorithm adapted from Aidukas et. al. 2018. For illumination estimation, I trained an object detection model to locate the "pupil" in the Fourier spectra of the input images to estimate the illumination. Under the guidance of \href{https://sites.google.com/site/uthkrishth/krishnaagarwal}{\bf Dr. Krishna Agarwal} and \href{https://sites.google.com/site/dilipprasad/}{\bf Dr. Dilip K. Prasad}.
+Fourier Ptychography is a microscopy technique that uses low-res images taken from multiple angles to generate a high-res image. I implemented the complete pipeline including the object detection based illumination angle estimation model, calibration and the final reconstruction algorithm adapted from Aidukas et. al. 2018. \emph{Published in Optics Express Journal (Dec. 2020)} [3].
+\sectionsep
+
+\runsubsection{ChestX}
+% \descript{ }
+\descript{| Sep 2019}
+Developed a computer-aided diagnosis system for detecting 14 chest abnormalities from X-ray scans. Used a novel 3-stage deep learning architecture and achieved a maximum AUC score of 0.91 (on Emphysema) with the average AUC score being 0.84. The system also calculates and displays the class activation maps for each of the classes, aiding in interpretation of the results. Secured 2nd rank in CDAC AI hackathon 2019 co-sponsored by Nvidia.
 \sectionsep
 
 % \runsubsection{Deep Learning in Fourier Ptychography}
@@ -269,3 +278,11 @@ Fourier ptychography is a microscopy technique that uses low-resolution images t
 
 \end{minipage} 
 \end{document}  \documentclass[]{article}
+
+% @article{jadhav2020talk,
+%   title={invited talk on "Machine Learning Based Analytics from Wearable Sensors"},
+%   author={Suyog Jadhav and Dilip K. Prasad},
+%   journal="workshop on Machine Learning and its Application in Sport Science and Public Health, TU Munich, Munich, Germany",
+%   month=Feb,
+%   year={2020}
+% }
